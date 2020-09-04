@@ -12,6 +12,7 @@ public interface CharRepository extends MongoRepository<MarvelCharResp, Long> {
 
     /**
      * Search for an entity that matches the requested name
+     *
      * @param name The character's name
      * @return A MarvelCharResp object
      */

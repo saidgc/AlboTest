@@ -23,7 +23,8 @@ public class MarvelColResp {
 
     /**
      * Initializer for collaborators
-     * @param id collaborator id
+     *
+     * @param id        collaborator id
      * @param last_sync Date of last update (dd/M/yyyy hh:mm:ss)
      */
     public MarvelColResp(long id, String last_sync) {

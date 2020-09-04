@@ -23,7 +23,6 @@ public class MarvelComic {
     }
 
     /**
-     *
      * @return the id of the comic
      */
     public int getId() {

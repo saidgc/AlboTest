@@ -22,7 +22,8 @@ public class MarvelCharResp {
 
     /**
      * MarvelCharResp object initializer
-     * @param id id of the MarvelCharResp object
+     *
+     * @param id        id of the MarvelCharResp object
      * @param last_sync Date of last update (dd/M/yyyy hh:mm:ss)
      */
     public MarvelCharResp(long id, String last_sync) {
@@ -38,7 +39,6 @@ public class MarvelCharResp {
     }
 
     /**
-     *
      * @return MarvelCharResp object id
      */
     public long getId() {

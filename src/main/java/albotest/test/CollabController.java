@@ -20,6 +20,7 @@ public class CollabController {
 
     /**
      * Endpoint to resolve test requests
+     *
      * @param nameHero Name of collaborators to search (Captain America, Iron Man)
      * @return Data by collaborators
      */

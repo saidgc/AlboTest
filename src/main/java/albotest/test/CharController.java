@@ -20,6 +20,7 @@ public class CharController {
 
     /**
      * Endpoint to resolve test requests
+     *
      * @param nameHero Name of character to search (Captain America, Iron Man)
      * @return Data by character
      */

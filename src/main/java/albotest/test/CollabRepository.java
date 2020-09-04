@@ -12,6 +12,7 @@ public interface CollabRepository extends MongoRepository<MarvelColResp, Long> {
 
     /**
      * Search for an entity that matches the requested name
+     *
      * @param name The collaborator's name
      * @return A MarvelColResp object
      */

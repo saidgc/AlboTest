@@ -20,7 +20,6 @@ public class MarvelInvolved {
     }
 
     /**
-     *
      * @return the current role of the person involved
      */
     public String getRole() {
@@ -28,7 +27,6 @@ public class MarvelInvolved {
     }
 
     /**
-     *
      * @param name name of the person involved
      */
     public void setName(String name) {
@@ -36,7 +34,6 @@ public class MarvelInvolved {
     }
 
     /**
-     *
      * @return the current name of the person involved
      */
     public String getName() {
