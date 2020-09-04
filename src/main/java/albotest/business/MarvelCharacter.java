@@ -34,7 +34,7 @@ public class MarvelCharacter {
     }
 
     /**
-     * @param comics comics by character in List<String>
+     * @param comics comics by character in List of String
      */
     public void setComics(List<String> comics) {
         this.comics = comics;
