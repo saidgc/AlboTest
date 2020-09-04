@@ -2,12 +2,16 @@ package albotest.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
+/**
+ * Entry point
+ */
 @SpringBootApplication
-public class TestApplication {
-
+@EnableScheduling
+public class TestAlbo {
     public static void main(String[] args) {
-        SpringApplication.run(TestApplication.class, args);
+        SpringApplication.run(TestAlbo.class, args);
     }
 
 }
