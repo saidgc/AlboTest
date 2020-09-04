@@ -21,15 +21,15 @@ public class CharController {
     /**
      * Endpoint to resolve test requests
      *
-     * @param nameHero Name of character to search (Captain America, Iron Man)
+     * @param character Name of character to search (Captain America, Iron Man)
      * @return Data by character
      */
-    @RequestMapping("marvel/characters/{nameHero}")
-    public MarvelCharResp characters(@PathVariable String nameHero) {
-        MarvelCharResp response = charRepository.findByName(nameHero);
+    @RequestMapping("marvel/characters/{character}")
+    public MarvelCharResp characters(@PathVariable String character) {
+        MarvelCharResp response = charRepository.findByName(character);
 
         if (response == null) {
-            throw new NoDataException(nameHero);
+            throw new NoDataException(character);
         }
 
         return response;

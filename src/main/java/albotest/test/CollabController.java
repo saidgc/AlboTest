@@ -21,15 +21,15 @@ public class CollabController {
     /**
      * Endpoint to resolve test requests
      *
-     * @param nameHero Name of collaborators to search (Captain America, Iron Man)
+     * @param character Name of collaborators to search (Captain America, Iron Man)
      * @return Data by collaborators
      */
-    @RequestMapping("marvel/colaborators/{nameHero}")
-    public MarvelColResp collaboratorByHero(@PathVariable String nameHero) {
-        MarvelColResp response = collabRepository.findByName(nameHero);
+    @RequestMapping("marvel/colaborators/{character}")
+    public MarvelColResp collaboratorByHero(@PathVariable String character) {
+        MarvelColResp response = collabRepository.findByName(character);
 
         if (response == null) {
-            throw new NoDataException(nameHero);
+            throw new NoDataException(character);
         }
 
         return response;
