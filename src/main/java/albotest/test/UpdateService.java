@@ -52,7 +52,7 @@ public class UpdateService {
             MarvelComic[] marvelComics = Utilities.fetchComics(data.getJSONObject(i).getString("id"));
 
             for (MarvelComic comic : marvelComics) {
-                List<MarvelInvolved> involves = comic.getCharacters().getCharacters();
+                List<MarvelInvolved> involves = comic.getCharacters().getItems();
                 for (MarvelInvolved involved : involves) {
                     List<String> set = characterComic.computeIfAbsent(involved.getName(), k -> new ArrayList<>());
                     set.add(comic.getTitle());
@@ -72,7 +72,7 @@ public class UpdateService {
             MarvelCharResp charResp = new MarvelCharResp(
                     Long.parseLong(object.getString("id")),
                     Utilities.getDate());
-            charResp.setMarvelCharacters(marvelCharacters);
+            charResp.setCharacters(marvelCharacters);
             charResp.setName(nameHero);
 
             charRepository.save(charResp);
@@ -101,7 +101,7 @@ public class UpdateService {
             MarvelColResp collaborator = new MarvelColResp(Long.parseLong(characterId), Utilities.getDate());
 
             for (MarvelComic comic : Utilities.fetchComics(arrayCharacters.getJSONObject(i).getString("id"))) {
-                List<MarvelInvolved> involves = comic.getCreators().getInvolves();
+                List<MarvelInvolved> involves = comic.getCreators().getItems();
                 for (MarvelInvolved involve : involves) {
                     switch (involve.getRole()) {
                         case "editor":

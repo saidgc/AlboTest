@@ -16,7 +16,7 @@ public class MarvelColResp {
     @Id
     private long id;
     private String name;
-    private String lastSync;
+    private String last_sync;
     private Set<String> editors;
     private Set<String> writers;
     private Set<String> colorist;
@@ -24,11 +24,11 @@ public class MarvelColResp {
     /**
      * Initializer for collaborators
      * @param id collaborator id
-     * @param lastSync Date of last update (dd/M/yyyy hh:mm:ss)
+     * @param last_sync Date of last update (dd/M/yyyy hh:mm:ss)
      */
-    public MarvelColResp(long id, String lastSync) {
+    public MarvelColResp(long id, String last_sync) {
         this.id = id;
-        this.lastSync = lastSync;
+        this.last_sync = last_sync;
     }
 
     /**
@@ -90,15 +90,15 @@ public class MarvelColResp {
     /**
      * @return Date of last update in format dd/M/yyyy hh:mm:ss
      */
-    public String getLastSync() {
-        return lastSync;
+    public String getLast_sync() {
+        return last_sync;
     }
 
     /**
-     * @param lastSync Date of last update (dd/M/yyyy hh:mm:ss)
+     * @param last_sync Date of last update (dd/M/yyyy hh:mm:ss)
      */
-    public void setLastSync(String lastSync) {
-        this.lastSync = lastSync;
+    public void setLast_sync(String last_sync) {
+        this.last_sync = last_sync;
     }
 
     /**

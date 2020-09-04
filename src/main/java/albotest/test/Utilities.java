@@ -15,8 +15,8 @@ import java.util.Date;
  */
 class Utilities {
 
-    private static final String apikey = "10c3f13811b06c4e6b0177f481b18c5e";
-    private static final String hash = "34a1a32896ddecb7159457ab7c3377df";
+    private static final String apikey = "5a22d51a6b95e7c0f6bc3293eaf82849";
+    private static final String hash = "b3e1b35b1e4ff19be53dca342eb1ea26";
     private static final String marvelApiURL = "https://gateway.marvel.com:443/v1/public";
 
     /**
@@ -53,7 +53,7 @@ class Utilities {
         JSONArray arrayCharacters = new JSONArray();
 
         try {
-            String ts = "1";
+            String ts = "1599067500";
             if (characterFetch) {
                 arrayCharacters = Unirest.get(url)
                         .queryString("ts", ts)

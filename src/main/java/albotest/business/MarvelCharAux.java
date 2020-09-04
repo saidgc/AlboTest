@@ -10,20 +10,20 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MarvelCharAux {
 
-    public List<MarvelInvolved> characters;
+    public List<MarvelInvolved> items;
 
     /**
      * @return A list of characters
      */
-    public List<MarvelInvolved> getCharacters() {
-        return characters;
+    public List<MarvelInvolved> getItems() {
+        return items;
     }
 
     /**
-     * @param characters characters list of the class MarvelInvolved
+     * @param items characters list of the class MarvelInvolved
      */
-    public void setCharacters(List<MarvelInvolved> characters) {
-        this.characters = characters;
+    public void setItems(List<MarvelInvolved> items) {
+        this.items = items;
     }
 
 }

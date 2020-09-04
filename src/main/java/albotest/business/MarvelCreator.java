@@ -10,19 +10,19 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MarvelCreator {
 
-    public List<MarvelInvolved> involves;
+    public List<MarvelInvolved> items;
 
     /**
      * @return A list of the people Involved from the comic
      */
-    public List<MarvelInvolved> getInvolves() {
-        return involves;
+    public List<MarvelInvolved> getItems() {
+        return items;
     }
 
     /**
-     * @param involves list of people involved
+     * @param items list of people involved
      */
-    public void setInvolves(List<MarvelInvolved> involves) {
-        this.involves = involves;
+    public void setItems(List<MarvelInvolved> items) {
+        this.items = items;
     }
 }

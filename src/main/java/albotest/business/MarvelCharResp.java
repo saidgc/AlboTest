@@ -17,17 +17,17 @@ public class MarvelCharResp {
     @Id
     private long id;
     private String name;
-    private String lastSync;
-    private List<MarvelCharacter> marvelCharacters;
+    private String last_sync;
+    private List<MarvelCharacter> characters;
 
     /**
      * MarvelCharResp object initializer
      * @param id id of the MarvelCharResp object
-     * @param lastSync Date of last update (dd/M/yyyy hh:mm:ss)
+     * @param last_sync Date of last update (dd/M/yyyy hh:mm:ss)
      */
-    public MarvelCharResp(long id, String lastSync) {
+    public MarvelCharResp(long id, String last_sync) {
         this.id = id;
-        this.lastSync = lastSync;
+        this.last_sync = last_sync;
     }
 
     /**
@@ -48,29 +48,29 @@ public class MarvelCharResp {
     /**
      * @return Date of last update (dd/M/yyyy hh:mm:ss)
      */
-    public String getLastSync() {
-        return lastSync;
+    public String getLast_sync() {
+        return last_sync;
     }
 
     /**
-     * @param lastSync Date of last update with format dd/M/yyyy hh:mm:ss
+     * @param last_sync Date of last update with format dd/M/yyyy hh:mm:ss
      */
-    public void setLastSync(String lastSync) {
-        this.lastSync = lastSync;
+    public void setLast_sync(String last_sync) {
+        this.last_sync = last_sync;
     }
 
     /**
-     * @param marvelCharacters Characters
+     * @param characters Characters
      */
-    public void setMarvelCharacters(List<MarvelCharacter> marvelCharacters) {
-        this.marvelCharacters = marvelCharacters;
+    public void setCharacters(List<MarvelCharacter> characters) {
+        this.characters = characters;
     }
 
     /**
      * @return A list of characters
      */
-    public List<MarvelCharacter> getMarvelCharacters() {
-        return marvelCharacters;
+    public List<MarvelCharacter> getCharacters() {
+        return characters;
     }
 
     /**
